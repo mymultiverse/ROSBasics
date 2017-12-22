@@ -1,3 +1,8 @@
+Stat with opening terminal with Ctrl+Alt+T 
+Before running ROS on system 
+```markdown
+source ~/.bachrc
+```
 ## Welcome to GitHub Pages
 
 <!--- You can use the [editor on GitHub](https://github.com/mymultiverse/deepspace/edit/master/index.md) to maintain and preview the content for your website in Markdown files. --->
