@@ -1,5 +1,4 @@
-Stat with opening terminal with Ctrl+Alt+T 
-Before running ROS on system 
+Stat with opening terminal with Ctrl+Alt+T and run:-
 ```markdown
 source ~/.bachrc
 ```
