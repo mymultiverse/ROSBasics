@@ -11,13 +11,17 @@ roscore
 
 <!--- Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files. --->
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Processes
+There are publisher nodes and subscriber nodes for every topic. Topics contain messages.    
 ```markdown
 rosrun
 rosnode list
+rqt_graph
+rostopic list
+rostopic echo topic-name
+rostopic info topic-name
+rosmsg show message-type-name
+rostopic pub -r 1 /turtle1/cmd_vel geometry_msgTwist '[0,0,0]' '[0,0,1]'
 # Header 1
 ## Header 2
 ### Header 3
