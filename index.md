@@ -35,6 +35,28 @@ rostopic pub -r 1 /turtle1/cmd_vel geometry_msgTwist '[0,0,0]' '[0,0,1]'
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
+
+
+```
+## PX4 installation
+```markdown
+mkdir -p ~/src
+cd ~/src
+git clone https://github.com/PX4/Firmware.git
+cd Firmware
+git submodule update --init --recursive
+cd ..
+```
+
+## Running UAV Simulation with px4 firmware
+
+```markdown
+cd ~/src/Firmware
+make posix_sitl_default gazebo 
+make posix gazebo_iris_opt_flow
+make posix_sitl_default gazebo_standard_vtol
+make posix_sitl_default gazebo_tailsitter
+pxh> commander takeoff
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
