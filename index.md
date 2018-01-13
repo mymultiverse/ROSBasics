@@ -59,7 +59,7 @@ make posix_sitl_default gazebo_tailsitter
 pxh> commander takeoff
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [Documentation](http://dev.px4.io.s3-website-us-east-1.amazonaws.com/simulation-gazebo.html).
 
 ### Jekyll Themes
 
