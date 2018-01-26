@@ -63,7 +63,7 @@ For more details see [Documentation](http://dev.px4.io.s3-website-us-east-1.amaz
 
 ### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mymultiverse/deepspace/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+ROS Gazebo interface [info](https://dev.px4.io/en/simulation/ros_interface.html). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
