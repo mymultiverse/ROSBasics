@@ -80,7 +80,19 @@ catkin_make
 
 ### Errors
 
-Having trouble ? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble ?
+
+[ImportError: No module named catkin_pkg.packages](https://stackoverflow.com/questions/47992442/importerror-no-module-named-catkin-pkg-packages) 
+
+[ImportError: No module](https://robotics.stackexchange.com/questions/14866/error-during-turtlebot-launch-in-ros) pip install module_name.
+
+[Invoking “cmake” failed](https://robotics.stackexchange.com/questions/15107/invoking-cmake-failed) 
+
+[GeographicLib exception](https://robotics.stackexchange.com/questions/14933/roslaunch-mavros-px4-launch-not-working-properly/15132#15132) 
+
+[catkin_make: catkin_pkg.package not found](https://answers.ros.org/question/281598/catkin_make-catkin_pkgpackage-not-found-anaconda/) 
+
+[catkin_ws/devel/setup.bash: No such file or directory](https://answers.ros.org/question/281599/catkin_wsdevelsetupbash-no-such-file-or-directory/) 
 
 # Putting all together 
 1. Start ROS master as mentioned above
@@ -88,7 +100,6 @@ Having trouble ? Check out our [documentation](https://help.github.com/categorie
 ```markdown
 cd ~/src/Firmware
 make posix_sitl_default gazebo
-
 ```
 3. Launch px4 with mavros
 ```markdown
