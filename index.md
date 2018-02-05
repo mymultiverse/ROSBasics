@@ -2,7 +2,7 @@ Stat with opening terminal with Ctrl+Alt+T and run:-
 ```markdown
 source ~/.bachrc
 ```
-## ROS Master
+### ROS Master
 It is like a connecting wire between various nodes, it allows to run nodes simultaneously. To begin ROS master:-
 ```markdown
 roscore
@@ -38,7 +38,7 @@ rostopic pub -r 1 /turtle1/cmd_vel geometry_msgTwist '[0,0,0]' '[0,0,1]'
 
 
 ```
-## PX4 installation
+### PX4 installation
 ```markdown
 mkdir -p ~/src
 cd ~/src
@@ -47,8 +47,12 @@ cd Firmware
 git submodule update --init --recursive
 cd ..
 ```
+### MAVROS installation
+```markdown
+sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras
+```
 
-## Running UAV Simulation with px4 firmware
+### Running UAV Simulation with px4 firmware
 
 ```markdown
 cd ~/src/Firmware
@@ -58,13 +62,55 @@ make posix_sitl_default gazebo_standard_vtol
 make posix_sitl_default gazebo_tailsitter
 pxh> commander takeoff
 ```
-
 For more details see [Documentation](http://dev.px4.io.s3-website-us-east-1.amazonaws.com/simulation-gazebo.html).
 
-### Jekyll Themes
+# Gazebo
 
-ROS Gazebo interface [info](https://dev.px4.io/en/simulation/ros_interface.html). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+ROS Gazebo interface [info](https://dev.px4.io/en/simulation/ros_interface.html). 
+## Interface with ROS
+### Creating ROS workspace
+```markdown
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+ Create pakage in workspace  
+```markdown
+cd src
+catkin_create_pkg mavtask mavros // catkin_create_pkg <package_name> [dependency1] [dependency2]
+```
+  Add task.ccp file containing operations to be performed by mav
+```markdown
+gedit CMakeLists.txt  adding following lins to the file
+add_executable(task task.cpp)
+target_link_libraries(task ${catkin_LIBRARIES})
 
-### Support or Contact
+cd ~/catkin_ws
+catkin_make
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+
+### Errors
+
+Having trouble ? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+# Putting all together 
+1. Start ROS master as mentioned above
+2. Start gazebo 
+```markdown
+cd ~/src/Firmware
+make posix_sitl_default gazebo
+
+```
+3. Launch px4 with mavros
+```markdown
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14540"
+```
+4. Running ros node for created task
+```markdown
+cd ~/catkin_ws
+source ./devel/setup.bash 
+rosrun mavtask task 
+```
