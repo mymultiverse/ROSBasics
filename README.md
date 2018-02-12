@@ -15,7 +15,7 @@ roscore
 <!--- Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files. --->
 
 ### Processes
-There are publisher nodes and subscriber nodes for every topic. Topics contain messages. Messages can be commands to perform perticular task.    
+Nodes are different processes. There are publisher nodes and subscriber nodes for every topic. Topics contain messages. Messages can be commands to perform perticular task.    
 ```markdown
 rosrun #rosrun package-name executable-name
 rosnode list
