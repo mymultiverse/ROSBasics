@@ -121,6 +121,9 @@ Demo
 ### Making Multi UAV simulation
 [Ref](https://dev.px4.io/en/simulation/multi-vehicle-simulation.html)
 [Error](https://github.com/PX4/Firmware/pull/7235)
+changes to be made in launch file and rcS startup file 
+1. Adding code block for new uav with all differnt communication port | in launch file 
+2. rcS file in posix.../SITL folder of firware  change in ID mavlink communication port with differnt datastream port
 
 
 [further](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
