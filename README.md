@@ -131,4 +131,6 @@ Demo
 
 
 
-[further](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
+[further Learning]
+[Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
+[Turtlebot](http://learn.turtlebot.com/2015/02/03/7/)
