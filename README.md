@@ -132,9 +132,14 @@ Demo
 ### Offboard Conrtol For Multi UAVs
 Ref. to [single uav offboard control](https://dev.px4.io/en/ros/mavros_offboard.html) , In this file we need to change the ros topic (active nodes and topics can be seen during multi UAV simulation) and edit topics corresponds to desired UAV node. For example
 ```markdown
-mavros/state ---> UAV2/mavros/state 
+"mavros/state" ---> "UAV2/mavros/state" 
 ```
+Don't forgate to run 
 
-[further Learning]
+    catkin_make
+after changing the control node file
+
+#### Further Learning
+
 [Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
 [Turtlebot](http://learn.turtlebot.com/2015/02/03/7/)
