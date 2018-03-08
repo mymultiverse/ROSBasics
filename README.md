@@ -84,6 +84,7 @@ catkin_make
 ### Errors
 
 Having trouble ?
+[AttributeError: 'module' object has no attribute 'Interpreter'](https://github.com/ros/genmsg/issues/63)
 
 [can't locate node [rosout] in package [rosout]](https://answers.ros.org/question/175202/why-am-i-getting-cant-locate-node-rosout-in-package-rosout/)
 
