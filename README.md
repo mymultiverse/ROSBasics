@@ -96,6 +96,7 @@ Having trouble ?
 [catkin_make: catkin_pkg.package not found](https://answers.ros.org/question/281598/catkin_make-catkin_pkgpackage-not-found-anaconda/) 
 
 [catkin_ws/devel/setup.bash: No such file or directory](https://answers.ros.org/question/281599/catkin_wsdevelsetupbash-no-such-file-or-directory/) 
+[can not be installed after](http://answers.gazebosim.org/question/15568/ros-kinetic-desktop-full-can-not-be-installed-after-installing-gazebo/)
 
 # Putting all together 
 1. Start ROS master as mentioned above
