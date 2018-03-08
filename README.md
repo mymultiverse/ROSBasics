@@ -85,6 +85,8 @@ catkin_make
 
 Having trouble ?
 
+[can't locate node [rosout] in package [rosout]](https://answers.ros.org/question/175202/why-am-i-getting-cant-locate-node-rosout-in-package-rosout/)
+
 [ImportError: No module named catkin_pkg.packages](https://stackoverflow.com/questions/47992442/importerror-no-module-named-catkin-pkg-packages) 
 
 [ImportError: No module](https://robotics.stackexchange.com/questions/14866/error-during-turtlebot-launch-in-ros) pip install module_name.
