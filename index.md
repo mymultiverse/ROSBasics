@@ -37,7 +37,7 @@ cd ..
 ```
 ### MAVROS installation
 ```markdown
-sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras
+sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
 Ref.
 [1.](https://github.com/mavlink/mavros/blob/master/mavros/README.md)
