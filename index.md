@@ -47,6 +47,7 @@ Ref.
 
 ```markdown
 cd ~/src/Firmware
+make posix_sitl_default
 make posix_sitl_default gazebo 
 make posix gazebo_iris_opt_flow
 make posix_sitl_default gazebo_standard_vtol
