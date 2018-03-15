@@ -27,9 +27,21 @@ rostopic info topic-name
 rosmsg show message-type-name
 rostopic pub -r 1 /turtle1/cmd_vel geometry_msgTwist '[0,0,0]' '[0,0,1]'
 
-
-
 ```
+### Testing with Turlte Bot
+Install
+
+    sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
+
+Launch simulation world in new termial (Tab completion can be used)
+    
+    roslaunch turtlebot_gazebo turtlebot_world.launch
+
+In another termial
+
+    roslaunch turtlebot_teleop keyboard_teleop.launch   
+   
+
 ## PX4 installation
 ```markdown
 mkdir -p ~/src
