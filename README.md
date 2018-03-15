@@ -1,4 +1,5 @@
 # ROSBasics
+### [Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu) 
 [Basic Commands of Robot Operating System](https://mymultiverse.github.io/ROSBasics/) 
 
 Start with opening terminal with Ctrl+Alt+T and run:-
