@@ -33,11 +33,11 @@ Install
 
     sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
 
-Launch simulation world in new termial (Tab completion can be used)
+Launch simulation world in new terminal (Tab completion can be used)
     
     roslaunch turtlebot_gazebo turtlebot_world.launch
 
-In another termial
+In another terminal
 
     roslaunch turtlebot_teleop keyboard_teleop.launch   
    
