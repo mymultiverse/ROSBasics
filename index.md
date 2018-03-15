@@ -1,4 +1,6 @@
-Stat with opening terminal with Ctrl+Alt+T and run:-
+### [Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu) 
+
+Start with opening terminal with Ctrl+Alt+T and run:-
 ```markdown
 source ~/.bachrc
 ```
