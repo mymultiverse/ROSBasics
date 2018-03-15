@@ -38,6 +38,10 @@ cd Firmware
 git submodule update --init --recursive
 cd ..
 ```
+### MAVROS installation
+```markdown
+sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras
+```
 
 ## Running UAV Simulation with px4 firmware
 
