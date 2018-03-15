@@ -43,6 +43,9 @@ cd ..
 ```markdown
 sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras
 ```
+Ref.
+[1.](https://github.com/mavlink/mavros/blob/master/mavros/README.md)
+[2.](https://dev.px4.io/en/setup/dev_env_linux_ubuntu.html)
 
 ## Running UAV Simulation with px4 firmware
 
