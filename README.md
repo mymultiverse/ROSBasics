@@ -1,4 +1,14 @@
 # ROSBasics
+### For px4 development setup
+This will install ROS, Gazebo with required dependencies and clone px4. 
+Following section in the [link](https://dev.px4.io/en/setup/dev_env_linux.html)
+
+1. Development Toolchain 
+2. Gazebo with ROS
+
+For running the simulation follow the instructions given in sections [Running UAV Simulation with px4 firmware | Making Multi UAV simulation]
+
+### Manual
 ### [Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu) 
 [Basic Commands of Robot Operating System](https://mymultiverse.github.io/ROSBasics/) 
 
