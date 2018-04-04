@@ -174,6 +174,9 @@ Don't forgate to run
     catkin_make
 after changing the control node file
 
+[![](https://img.youtube.com/vi/b1jjp161HqU/0.jpg)](https://www.youtube.com/watch?v=b1jjp161HqU)
+
+
 #### Further Learning
 
 [Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
