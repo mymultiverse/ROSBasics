@@ -1,5 +1,5 @@
 /**
- * @file offb_node.cpp
+ * 3 UAVs
  * @brief offboard example node, written with mavros version 0.14.2, px4 flight
  * stack and tested in Gazebo SITL
  */
