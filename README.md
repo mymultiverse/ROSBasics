@@ -132,7 +132,7 @@ Having trouble ?
 [catkin_ws/devel/setup.bash: No such file or directory](https://answers.ros.org/question/281599/catkin_wsdevelsetupbash-no-such-file-or-directory/) 
 [can not be installed after](http://answers.gazebosim.org/question/15568/ros-kinetic-desktop-full-can-not-be-installed-after-installing-gazebo/)
 
-# Putting all together 
+# Putting it all together 
 1. Start ROS master as mentioned above
 2. Start gazebo 
 ```markdown
