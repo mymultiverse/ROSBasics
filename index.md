@@ -81,7 +81,9 @@ target_link_libraries(task ${catkin_LIBRARIES})
 
 cd ~/catkin_ws
 catkin_make
-
+if this gives error
+//built by 'catkin build'. Please remove the build space or pick a different build space. In that case build command should work
+catkin build
 ```
 
 ### Errors
