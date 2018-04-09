@@ -16,6 +16,8 @@
 mavros_msgs::State current_state_uav1;
 mavros_msgs::State current_state_uav2;
 mavros_msgs::State current_state_uav3;
+mavros_msgs::State current_state_uav4;
+
 
 void state_cb_uav1(const mavros_msgs::State::ConstPtr& msg1){
     current_state_uav1 = *msg1;
@@ -27,6 +29,10 @@ void state_cb_uav2(const mavros_msgs::State::ConstPtr& msg2){
 
 void state_cb_uav3(const mavros_msgs::State::ConstPtr& msg3){
     current_state_uav3 = *msg3;
+}
+
+void state_cb_uav4(const mavros_msgs::State::ConstPtr& msg4){
+    current_state_uav4 = *msg4;
 }
 
 
