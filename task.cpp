@@ -337,8 +337,8 @@ int main(int argc, char **argv)
              (!(land_client_uav3.call(land_cmd_uav3) &&
             land_cmd_uav3.response.success))){
 
-      local_pos_pub_uav3.publish(pose_uav1);  
-      local_pos_pub_uav3.publish(pose_uav2);  
+      local_pos_pub_uav1.publish(pose_uav1);  
+      local_pos_pub_uav2.publish(pose_uav2);  
       local_pos_pub_uav3.publish(pose_uav3);
       ROS_INFO("trying to land");
       ros::spinOnce();
