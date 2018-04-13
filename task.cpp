@@ -330,12 +330,16 @@ int main(int argc, char **argv)
     }
 
     ROS_INFO("trying to land");
-    while ((!(land_client_uav1.call(land_cmd_uav1) &&
-            land_cmd_uav1.response.success)) &&
+ /* As to land all UAV simultaneously the not landing condition should be checked combined instead of 
+   individual UAV as In tha case Only first land and other entered into failsafe model*/
+    while (!(land_client_uav1.call(land_cmd_uav1) && land_cmd_uav1.response.success && 
+             land_client_uav1.call(land_cmd_uav2) && land_cmd_uav2.response.success &&
+             land_client_uav3.call(land_cmd_uav3) && land_cmd_uav3.response.success)
+        /*(!(land_client_uav1.call(land_cmd_uav1) && land_cmd_uav1.response.success)) &&
             !(land_client_uav2.call(land_cmd_uav2) &&
                 land_cmd_uav2.response.success) &&
              (!(land_client_uav3.call(land_cmd_uav3) &&
-            land_cmd_uav3.response.success))){
+            land_cmd_uav3.response.success))*/){
 
       local_pos_pub_uav1.publish(pose_uav1);  
       local_pos_pub_uav2.publish(pose_uav2);  
