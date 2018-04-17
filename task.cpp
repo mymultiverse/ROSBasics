@@ -3,6 +3,7 @@
  * @brief offboard example node, written with mavros version 0.14.2, px4 flight
  * stack and tested in Gazebo SITL
  */
+//#include <package_name/type_name.h>
 
 #include <ros/ros.h>
 #include <geometry_msgs/PoseStamped.h>
@@ -46,6 +47,8 @@ int main(int argc, char **argv)
 
     // subs and pubs for uavs
 
+    // ros::Publisher pub = node_handle.advertise<message_type>(topic_name, queue_size);
+    
     ros::Subscriber state_sub_uav1 = nh_uav1.subscribe<mavros_msgs::State>
             ("uav1/mavros/state", 10, state_cb_uav1);
     ros::Publisher local_pos_pub_uav1 = nh_uav1.advertise<geometry_msgs::PoseStamped>
