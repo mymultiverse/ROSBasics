@@ -19,6 +19,10 @@ mavros_msgs::State current_state_uav2;
 mavros_msgs::State current_state_uav3;
 mavros_msgs::State current_state_uav4;
 
+geometry_msgs::PoseStamped pose_uav1;
+geometry_msgs::PoseStamped pose_uav2;
+
+
 
 void state_cb_uav1(const mavros_msgs::State::ConstPtr& msg1){
     current_state_uav1 = *msg1;
@@ -36,6 +40,10 @@ void state_cb_uav4(const mavros_msgs::State::ConstPtr& msg4){
     current_state_uav4 = *msg4;
 }
 
+void follow(const geometry_msgs::PoseStamped::ConstPtr& fmsg){
+    pose_uav1 = *fmgs;
+    pose_uav1.pose.position.x = pose_uav1.pose.position.x+1.0;
+}
 
 
 int main(int argc, char **argv)
@@ -72,7 +80,10 @@ int main(int argc, char **argv)
     ros::ServiceClient set_mode_client_uav2 = nh_uav2.serviceClient<mavros_msgs::SetMode>
             ("uav2/mavros/set_mode");
 
+    ros::Subscriber pos_sub_uav2 = nh_uav2.subscribe<geometry_mgs::PoseStamped>
+            ("uav2/mavros/local_position/pose", 10, follow);
 
+    
     ros::Subscriber state_sub_uav3 = nh_uav3.subscribe<mavros_msgs::State>
             ("uav3/mavros/state", 10, state_cb_uav3);
     ros::Publisher local_pos_pub_uav3 = nh_uav3.advertise<geometry_msgs::PoseStamped>
@@ -83,7 +94,7 @@ int main(int argc, char **argv)
             ("uav3/mavros/cmd/land");
     ros::ServiceClient set_mode_client_uav3 = nh_uav3.serviceClient<mavros_msgs::SetMode>
             ("uav3/mavros/set_mode");
-
+    
 
     //the setpoint publishing rate MUST be faster than 2Hz
     ros::Rate rate(40.0);
@@ -95,7 +106,7 @@ int main(int argc, char **argv)
         ROS_INFO("connecting to FCT...");
     }
 
-    geometry_msgs::PoseStamped pose_uav1;
+    
     pose_uav1.pose.position.x = 0;
     pose_uav1.pose.position.y = 0;
     pose_uav1.pose.position.z = FLIGHT_ALTITUDE;
@@ -334,7 +345,7 @@ int main(int argc, char **argv)
 
     ROS_INFO("trying to land");
  /* As to land all UAV simultaneously the not landing condition should be checked combined instead of 
-   individual UAV as In tha case Only first land and other entered into failsafe model*/
+   individual UAV as In that case Only first land and other entered into failsafe model*/
     while (!(land_client_uav1.call(land_cmd_uav1) && land_cmd_uav1.response.success && 
              land_client_uav1.call(land_cmd_uav2) && land_cmd_uav2.response.success &&
              land_client_uav3.call(land_cmd_uav3) && land_cmd_uav3.response.success)
