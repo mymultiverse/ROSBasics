@@ -22,6 +22,7 @@ mavros_msgs::State current_state_uav4;
 geometry_msgs::PoseStamped pose_uav1;
 geometry_msgs::PoseStamped pose_uav2;
 
+ros::Publisher local_pos_pub_uav1;
 
 
 void state_cb_uav1(const mavros_msgs::State::ConstPtr& msg1){
@@ -43,6 +44,7 @@ void state_cb_uav4(const mavros_msgs::State::ConstPtr& msg4){
 void follow(const geometry_msgs::PoseStamped::ConstPtr& fmsg){
     pose_uav1 = *fmgs;
     pose_uav1.pose.position.x = pose_uav1.pose.position.x+1.0;
+    local_pos_pub_uav1.publish(pose_uav1);
 }
 
 
