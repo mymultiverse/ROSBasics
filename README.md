@@ -176,8 +176,12 @@ after changing the control node file
 
 [![](https://img.youtube.com/vi/b1jjp161HqU/0.jpg)](https://www.youtube.com/watch?v=b1jjp161HqU)
 
+### [Flight Data Loggin](https://dev.px4.io/en/log/flight_log_analysis.html)
+
 
 #### Further Learning
 
 [Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
 [Turtlebot](http://learn.turtlebot.com/2015/02/03/7/)
+
+ 
