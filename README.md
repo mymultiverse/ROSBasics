@@ -181,7 +181,8 @@ Fligh log data can be save using Qgroundcontrol or can be found in
 `
 /Firmware/buid/posix_sitl_default/tmp/rootfs/fs/microsd/log
 `
-[Online analysis of flight]()
+
+[Online analysis of flight](https://logs.px4.io/)
 
 [pyulog Tool](https://github.com/PX4/pyulog)
 
