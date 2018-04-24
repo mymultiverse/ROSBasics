@@ -144,6 +144,19 @@ Don't forgate to run
     catkin_make
 after changing the control node file
 
+[![](https://img.youtube.com/vi/b1jjp161HqU/0.jpg)](https://www.youtube.com/watch?v=b1jjp161HqU)
+
+
+### [Flight Data Loggin](https://dev.px4.io/en/log/flight_log_analysis.html)
+Fligh log data can be save using Qgroundcontrol or can be found in 
+`
+/Firmware/buid/posix_sitl_default/tmp/rootfs/fs/microsd/log
+`
+
+[Online analysis of flight](https://logs.px4.io/)
+
+[pyulog Tool](https://github.com/PX4/pyulog)
+
 #### Further Learning
 
 [Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
