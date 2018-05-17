@@ -6,7 +6,8 @@ Following section in the [link](https://dev.px4.io/en/setup/dev_env_linux.html)
 1. Development Toolchain 
 2. Gazebo with ROS
 
-For running the simulation follow the instructions given in sections [Running UAV Simulation with px4 firmware | Making Multi UAV simulation]
+For running the simulation follow the instructions given in sections 
+[Running UAV Simulation with px4 firmware](https://github.com/mymultiverse/ROSBasics#running-uav-simulation-with-px4-firmware) | [Making Multi UAV simulation](https://github.com/mymultiverse/ROSBasics#making-multi-uav-simulation)
 
 ### Manual
 ### [Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu) 
