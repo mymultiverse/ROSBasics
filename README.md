@@ -6,8 +6,11 @@ Following section in the [link](https://dev.px4.io/en/setup/dev_env_linux.html)
 1. Development Toolchain 
 2. Gazebo with ROS
 
-For running the simulation follow the instructions given in sections 
-[Running UAV Simulation with px4 firmware](https://github.com/mymultiverse/ROSBasics#running-uav-simulation-with-px4-firmware) | [Making Multi UAV simulation](https://github.com/mymultiverse/ROSBasics#making-multi-uav-simulation)
+For running the simulation follow the instructions given in sections
+
+* [Running UAV Simulation with px4 firmware](https://github.com/mymultiverse/ROSBasics#running-uav-simulation-with-px4-firmware) 
+
+* [Making Multi UAV simulation](https://github.com/mymultiverse/ROSBasics#making-multi-uav-simulation)
 
 ### Manual
 ### [Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu) 
@@ -155,11 +158,15 @@ Demo
 [![](https://img.youtube.com/vi/sCxQypo6neU/0.jpg)](https://www.youtube.com/watch?v=sCxQypo6neU)
 
 ### Making Multi UAV simulation
-[Ref](https://dev.px4.io/en/simulation/multi-vehicle-simulation.html)
-[Error](https://github.com/PX4/Firmware/pull/7235)
-changes to be made in launch file and rcS startup file 
+
+Changes to be made in launch file and rcS startup file 
 1. Adding code block for new uav with all differnt communication port | in launch file 
+
 2. rcS file in posix.../SITL folder of firware  change in ID mavlink communication port with differnt datastream port
+
+[Ref](https://dev.px4.io/en/simulation/multi-vehicle-simulation.html)
+
+[Error](https://github.com/PX4/Firmware/pull/7235)
 
 Demo
 
