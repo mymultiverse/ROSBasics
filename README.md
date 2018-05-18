@@ -164,6 +164,13 @@ Changes to be made in launch file and rcS startup file
 
 2. rcS file in posix.../SITL folder of firware  change in ID mavlink communication port with differnt datastream port
 
+3. Inside firmware directory source the environment and run the launch file
+```markdown
+source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/posix_sitl_default
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd):$(pwd)/Tools/sitl_gazebo
+roslaunch px4 multi_uav_mavros_sitl.launch
+```
+
 [Ref](https://dev.px4.io/en/simulation/multi-vehicle-simulation.html)
 
 [Error](https://github.com/PX4/Firmware/pull/7235)
