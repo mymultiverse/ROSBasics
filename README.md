@@ -53,7 +53,12 @@ Launch simulation world in new terminal (Tab completion can be used)
 
 In another terminal
 
-    roslaunch turtlebot_teleop keyboard_teleop.launch   
+    roslaunch turtlebot_teleop keyboard_teleop.launch  
+
+#### Further Learning
+
+[Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
+[Turtlebot](http://learn.turtlebot.com/2015/02/03/7/)
    
 
 ## PX4 installation
@@ -201,9 +206,6 @@ Fligh log data can be save using Qgroundcontrol or can be found in
 
 [pyulog Tool](https://github.com/PX4/pyulog)
 
-#### Further Learning
 
-[Intro](https://www.allaboutcircuits.com/technical-articles/an-introduction-to-robot-operating-system-ros/) 
-[Turtlebot](http://learn.turtlebot.com/2015/02/03/7/)
 
  
